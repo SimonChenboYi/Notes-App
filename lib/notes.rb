@@ -12,4 +12,7 @@ class Notes
     @notes.keys
   end
 
+  def check_note(title)
+    "#{title}: #{@notes[title]}"
+  end
 end

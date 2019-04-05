@@ -19,7 +19,7 @@ describe Notes do
       notes = described_class.new
       notes.add_note("title1","body1")
       notes.add_note("title2","body2")
-      expect(notes.chek_note("title1")).to eq "title1: body1"
+      expect(notes.check_note("title1")).to eq "title1: body1"
     end
   end
 
