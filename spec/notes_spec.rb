@@ -7,10 +7,20 @@ describe Notes do
 
   describe '#list' do
     it "list the titles" do
-      note = described_class.new
-      note.add_note("title1","body1")
-      note.add_note("title2","body2")
-      expect(note.list).to eq ["title1", "title2"]
+      notes = described_class.new
+      notes.add_note("title1","body1")
+      notes.add_note("title2","body2")
+      expect(notes.list).to eq ["title1", "title2"]
     end
   end
+
+  describe '#check_note' do
+    it "check the note" do
+      notes = described_class.new
+      notes.add_note("title1","body1")
+      notes.add_note("title2","body2")
+      expect(notes.chek_note("title1")).to eq "title1: body1"
+    end
+  end
+
 end
