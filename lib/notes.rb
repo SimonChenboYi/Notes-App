@@ -8,4 +8,8 @@ class Notes
     @notes[title] = body
   end
 
+  def list
+    @notes.keys
+  end
+
 end

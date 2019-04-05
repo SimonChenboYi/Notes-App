@@ -7,7 +7,7 @@ describe Notes do
 
   describe '#list' do
     it "list the titles" do
-      note = describe_class.new
+      note = described_class.new
       note.add_note("title1","body1")
       note.add_note("title2","body2")
       expect(note.list).to eq ["title1", "title2"]
